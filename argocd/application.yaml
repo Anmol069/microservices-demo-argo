@@ -9,7 +9,7 @@ spec:
 
   source:
     repoURL: https://github.com/Anmol069/microservices-demo.git
-    targetRevision: feature/Coupon
+    targetRevision: feature/coupon
     path: release
 
   destination:
