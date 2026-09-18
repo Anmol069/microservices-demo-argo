@@ -730,7 +730,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: cavissonsystem/frontend:javaV17
+          image: cavissonsystem/frontend:javav4
           ports:
           - containerPort: 8080
           readinessProbe:
