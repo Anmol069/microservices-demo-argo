@@ -733,6 +733,9 @@ spec:
           image:  cavissonsystem/frontend:13
           ports:
           - containerPort: 8080
+          volumeMounts:
+          - name: tmp
+            mountPath: /tmp
           readinessProbe:
             initialDelaySeconds: 10
             httpGet:
@@ -790,6 +793,9 @@ spec:
             limits:
               cpu: 200m
               memory: 512Mi
+      volumes:
+      - name: tmp
+        emptyDir: {}
 ---
 apiVersion: v1
 kind: Service
